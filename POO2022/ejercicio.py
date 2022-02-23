@@ -23,7 +23,7 @@ class Gerente(Trabajador):
     def trabajar(self):
         print("El gerente ",self.nombre," esta gerenciando")
 
-    def nuevo_salario(self, empleado : Trabajador, nuevo_salario):
+    def nuevo_salario(self, empleado : TrabajadorAntiguo, nuevo_salario):
         if empleado.salario < nuevo_salario :
             empleado.salario = nuevo_salario - (1000*self.antiguedad)
         
